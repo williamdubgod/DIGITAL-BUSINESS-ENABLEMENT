@@ -1,16 +1,18 @@
 import NavBar from "@/components/navbar";
+import Car from "../assets/ford.png"
 
 export default function Home() {
   return (
     <>
       <NavBar />
 
-      <main className="container bg-slate-900 mt-10 mx-auto rounded p-4">
+      <main className="container bg-zinc-900 mt-10 mx-auto rounded p-4">
         <div>
-          <img src={'https://avatars.githubusercontent.com/u/99343816?v=4'} alt="ford"/>
+          <img src={Car} alt="ford"/>
         </div>
       </main>
     </>
   )
 }
  
+
