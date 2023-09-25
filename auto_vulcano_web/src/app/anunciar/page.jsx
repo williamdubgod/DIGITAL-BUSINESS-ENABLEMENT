@@ -86,7 +86,7 @@ export default function Anunciar() {
             onChange={(e) => setAnoModelo(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 text-gray-700"
           >
-            <option value="">Selecione o Ano do Modelo</option>
+            <option value="">Ano do Modelo</option>
             {yearsModelo.map((year) => (
               <option key={year} value={year}>
                 {year}
@@ -102,7 +102,7 @@ export default function Anunciar() {
             onChange={(e) => setAnoFabricacao(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 text-gray-700"
           >
-            <option value="">Selecione o Ano de Fabricação</option>
+            <option value="">Ano de Fabricação</option>
             {yearsFabricacao.map((year) => (
               <option key={year} value={year}>
                 {year}
@@ -126,18 +126,26 @@ export default function Anunciar() {
           </select>
         </div>
 
+        <div className="mb-4 flex items-center">
+          <input type="checkbox" id="blindado" className="mr-2" />
+          <label htmlFor="blindado" className="text-gray-700 text-sm">Blindado</label>
+        </div>
+
+
         <div className="bg-yellow-500 text-white p-4 rounded-lg mb-4">
           ATENÇÃO: Você não poderá alterar a marca, modelo e versão do veículo após criar o anúncio. Preencha corretamente! ;)
         </div>
 
         <div className="flex justify-between">
-          <button className="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-100 focus:outline-none">
+          <button className="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-100 focus:outline-none flex-1 mr-4">
             Voltar
           </button>
-          <button className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 focus:outline-none">
+          <button className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 focus:outline-none flex-1">
             Publicar
           </button>
         </div>
+
+
       </div>
     </div>
     </>

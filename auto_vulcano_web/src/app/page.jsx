@@ -1,5 +1,5 @@
 import NavBar from "@/components/navbar";
-import Car from "../assets/ford.png"
+import Car from "@/assets/ford.png"
 
 export default function Home() {
   return (

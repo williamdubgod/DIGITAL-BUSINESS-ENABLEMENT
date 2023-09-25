@@ -7,13 +7,13 @@ export default function NavBar() {
           <div className="w-2/3 rounded-lg overflow-hidden">
             <ul className="flex items-center justify-center gap-14 p-3 text-slate-100 bg-zinc-900">
               <li>
-                <Link href="/" className="text-yellow-500">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
                 <Link href="/estoque">Estoque</Link>
               </li>
               <li>
-                <Link href="/anunciar">Anunciar</Link>
+                <Link href="/anunciar" className="text-yellow-500">Anunciar</Link>
               </li>
             </ul>
           </div>
