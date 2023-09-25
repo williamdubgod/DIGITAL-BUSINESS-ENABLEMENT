@@ -20,3 +20,10 @@ body {
   color: azure;
   background: #202022;
 }
+
+@font-face {
+  font-family: 'NATS Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../fonts/NATS-Regular.woff'), url('../fonts/NATS-Regular.woff') format('woff');
+  }
