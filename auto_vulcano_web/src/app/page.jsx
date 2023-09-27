@@ -1,41 +1,33 @@
 import NavBar from "@/components/navbar";
 import Image from 'next/image'
-import Car from "@/assets/ford.png"
+import Car from "@/assets/corolla-cross(1).png"
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <NavBar />
 
-      <main className="container mt-10 flex">
+      <div className="bg-orange-400 flex items-center justify-center p-10 mt-10 rounded-xl mx-auto" style={{ maxWidth: '1000px' }}>
+        <div className="flex flex-col text-white text-center">
+          <h1 className="text-3xl font-semibold mb-4">
+            O carro perfeito para você!
+          </h1>
+          <p className="text-xl mb-2">Toyota Corolla Cross XRE Direct Shift</p>
+          <p className="text-xl mb-2">Ano: 2023</p>
+          <p className="text-xl mb-2">Quilometragem: 0km</p>
+          <p className="text-xl mb-2">Blindagem: Nível 3A</p>
+          <p className="text-xl">Garantia: 10 anos</p>
+        </div>
         <div className="w-1/2">
-          <Image src={Car} width={500} height={500} alt="Ford"/>
+          <Image
+            src={Car}
+            alt="Carro"
+            width={500}
+            height={300}
+          />
         </div>
-        <div className="w-1/2 flex flex-col justify-center">
-          <h1 style={{
-            fontSize: '65px',
-            color: '#F2B705'
-          }}>ANUNCIE JÁ</h1>
-          <p className="text-[20px] md:text-base lg:text-base xl:text-base">Comprar e vender nunca foi tão fácil!</p>
-          <p className="text-[20px] md:text-base lg:text-base xl:text-base">Anuncie Online</p>
-          <div className="mt-4">
-            <button className="bg-black text-white py-2 px-4 rounded-lg" style={{ padding: '16px 35px' }}>Publicar anúncio</button>
-          </div>
-        </div>
-      </main>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
     </>
   )
 }
- 
-

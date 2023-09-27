@@ -24,7 +24,7 @@ export default function Anunciar() {
     <>
       <NavBar />
 
-      <div className="min-h-screen flex-col flex items-center justify-center">
+      <div className="flex-col flex items-center justify-center">
       <Image src={componente} alt="Ford"/>
       <div className="p-8 rounded-lg shadow-lg w-96 bg-slate-200">
         <h1 className="text-2xl font-semibold text-center mb-4 text-gray-700 ">Vamos começar seu anúncio?</h1>
